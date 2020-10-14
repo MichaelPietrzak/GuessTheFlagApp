@@ -34,7 +34,7 @@
                                 <rect key="frame" x="114" y="280" width="186" height="100"/>
                                 <state key="normal" title="Button" image="us"/>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="O2U-lS-Z1Z" eventType="touchUpInside" id="1T9-Ln-Csb"/>
+                                    <action selector="buttonTapped:" destination="O2U-lS-Z1Z" eventType="touchUpInside" id="ZAQ-bB-rEU"/>
                                 </connections>
                             </button>
                         </subviews>
