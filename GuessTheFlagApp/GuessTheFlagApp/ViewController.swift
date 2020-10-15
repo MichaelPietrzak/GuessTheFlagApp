@@ -55,7 +55,7 @@ class ViewController: UIViewController {
             score += 1
             print("Correct!")
         } else {
-            title = "Wrong"
+            title = "Wrong! That's flag of \(countries[sender.tag].uppercased())"
             score -= 1
             print("Wrong!")
         }
