@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         correctAnswer = Int.random(in: 0...2)
         print("\(correctAnswer) : \(countries[correctAnswer].uppercased())")
         
-        title = countries[correctAnswer].uppercased()
+        title = "\(countries[correctAnswer].uppercased()), Score: \(score)"
     }
     
     @IBAction func buttonTapped(_ sender: UIButton) {
