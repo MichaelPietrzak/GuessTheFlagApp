@@ -30,6 +30,14 @@ class ViewController: UIViewController {
         
         countries += ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "russia", "spain", "uk", "us"]
         askQuestion()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "YOUR SCORE", style: UIBarButtonItem.Style.plain, target: self, action: #selector(showScoreTapped))
+    }
+    
+    @objc func showScoreTapped() {
+        let scoreTap = UIAlertController(title: "Your score", message: "\(score) points", preferredStyle: .alert)
+        scoreTap.addAction(UIAlertAction(title: "OK", style: .default, handler: .none))
+        present(scoreTap, animated: true)
     }
 
     func askQuestion(action: UIAlertAction! = nil) {
